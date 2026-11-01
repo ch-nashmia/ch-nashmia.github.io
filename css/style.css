@@ -505,7 +505,8 @@ main { overflow-x: clip; }
 .process .section-title, .process h3 { color: var(--art-paper); }
 .process .section-lead { color: rgba(255, 250, 240, .86); }
 .process-steps { display: grid; gap: 2.2rem; list-style: none; margin: 0; padding: 0; counter-reset: step; }
-@media (min-width: 992px) { .process-steps { grid-template-columns: repeat(3, 1fr); gap: 3.2rem; } }
+@media (min-width: 768px) { .process-steps { grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
+@media (min-width: 1200px) { .process-steps { grid-template-columns: repeat(3, 1fr); gap: 3.2rem; } }
 .process-step { position: relative; }
 .process-panel {
   position: relative; aspect-ratio: 4 / 3.2;
@@ -530,7 +531,7 @@ main { overflow-x: clip; }
 .process-step h3 { display: flex; align-items: center; font-size: 2rem; margin-bottom: .8rem; }
 .process-step p { color: rgba(255, 250, 240, .88); margin-bottom: .8rem; }
 .process-step .chip { background: transparent; color: var(--art-paper); border-color: rgba(255, 250, 240, .7); }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .process-step:not(:last-child)::after {
     content: ""; position: absolute; top: 34%; right: -3.1rem; width: 3rem; height: 28px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 28'%3E%3Cpath d='M3 16C14 6 26 22 40 13' fill='none' stroke='%23ffc53d' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M32 6L42 12L35 22' fill='none' stroke='%23ffc53d' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
