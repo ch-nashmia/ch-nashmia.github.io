@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Web scraping and MongoDB project illustration</title>
+  <desc id="desc">A visual pipeline from a website through Scrapy into MongoDB.</desc>
+  <rect width="1200" height="750" fill="#fffaf0"/>
+  <rect x="55" y="55" width="1090" height="640" rx="28" fill="#2446d8" stroke="#17130e" stroke-width="8"/>
+  <text x="95" y="135" fill="#fffaf0" font-family="Arial, sans-serif" font-size="48" font-weight="700">WEB SCRAPING</text>
+  <text x="98" y="180" fill="#ffc53d" font-family="Arial, sans-serif" font-size="25" font-weight="700">SCRAPY + MONGODB</text>
+  <rect x="105" y="265" width="240" height="215" rx="18" fill="#fffaf0" stroke="#17130e" stroke-width="8"/>
+  <rect x="130" y="300" width="190" height="22" rx="8" fill="#ef4a2f"/>
+  <rect x="130" y="350" width="135" height="18" rx="6" fill="#ffc53d"/>
+  <rect x="130" y="390" width="165" height="18" rx="6" fill="#2446d8"/>
+  <rect x="130" y="430" width="105" height="18" rx="6" fill="#17130e"/>
+  <text x="128" y="535" fill="#fffaf0" font-family="Arial, sans-serif" font-size="25" font-weight="700">WEBSITE</text>
+  <path d="M385 375h145" stroke="#ffc53d" stroke-width="14" stroke-linecap="round"/>
+  <path d="m505 340 45 35-45 35" fill="none" stroke="#ffc53d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="640" cy="375" r="95" fill="#ef4a2f" stroke="#17130e" stroke-width="8"/>
+  <path d="M590 355c28-42 84-42 101 0M590 395c28 42 84 42 101 0" fill="none" stroke="#fffaf0" stroke-width="10" stroke-linecap="round"/>
+  <text x="570" y="535" fill="#fffaf0" font-family="Arial, sans-serif" font-size="25" font-weight="700">SCRAPY</text>
+  <path d="M760 375h145" stroke="#ffc53d" stroke-width="14" stroke-linecap="round"/>
+  <path d="m880 340 45 35-45 35" fill="none" stroke="#ffc53d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="1010" cy="315" rx="105" ry="38" fill="#ffc53d" stroke="#17130e" stroke-width="8"/>
+  <path d="M905 315v125c0 21 47 38 105 38s105-17 105-38V315M905 375c0 21 47 38 105 38s105-17 105-38" fill="#ffc53d" stroke="#17130e" stroke-width="8"/>
+  <text x="930" y="535" fill="#fffaf0" font-family="Arial, sans-serif" font-size="25" font-weight="700">MONGODB</text>
+</svg>

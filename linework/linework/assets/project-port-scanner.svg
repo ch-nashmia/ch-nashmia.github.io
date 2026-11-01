@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Python port scanner project illustration</title>
+  <desc id="desc">A terminal and network radar identify open, closed, and filtered ports.</desc>
+  <rect width="1200" height="750" fill="#fffaf0"/>
+  <rect x="55" y="55" width="1090" height="640" rx="28" fill="#17130e" stroke="#17130e" stroke-width="8"/>
+  <text x="95" y="135" fill="#fffaf0" font-family="Arial, sans-serif" font-size="48" font-weight="700">PYTHON PORT SCANNER</text>
+  <text x="98" y="180" fill="#ffc53d" font-family="Arial, sans-serif" font-size="25" font-weight="700">NETWORK SECURITY</text>
+  <rect x="115" y="260" width="500" height="275" rx="18" fill="#2446d8" stroke="#fffaf0" stroke-width="8"/>
+  <circle cx="155" cy="300" r="10" fill="#ef4a2f"/>
+  <circle cx="190" cy="300" r="10" fill="#ffc53d"/>
+  <circle cx="225" cy="300" r="10" fill="#fffaf0"/>
+  <text x="155" y="370" fill="#fffaf0" font-family="monospace" font-size="30">$ python scanner.py</text>
+  <text x="155" y="420" fill="#ffc53d" font-family="monospace" font-size="26">22 OPEN</text>
+  <text x="155" y="465" fill="#fffaf0" font-family="monospace" font-size="26">80 OPEN</text>
+  <text x="155" y="510" fill="#ef4a2f" font-family="monospace" font-size="26">443 CLOSED</text>
+  <circle cx="880" cy="395" r="155" fill="#2446d8" stroke="#fffaf0" stroke-width="8"/>
+  <circle cx="880" cy="395" r="95" fill="none" stroke="#ffc53d" stroke-width="5"/>
+  <circle cx="880" cy="395" r="35" fill="#ef4a2f" stroke="#fffaf0" stroke-width="7"/>
+  <path d="M880 395 995 315M880 395 760 490M880 395 880 240" stroke="#ffc53d" stroke-width="8" stroke-linecap="round"/>
+  <text x="760" y="600" fill="#fffaf0" font-family="Arial, sans-serif" font-size="25" font-weight="700">SCAN • IDENTIFY • REPORT</text>
+</svg>
