@@ -102,9 +102,13 @@ main { overflow-x: clip; }
 ------------------------------------------------------------------ */
 .section { padding: 104px 0; position: relative; }
 .section-tight { padding: 72px 0; }
+.section-about { padding-bottom: 56px; }
+.section-contact { padding-top: 56px; }
 @media (max-width: 767.98px) {
   .section { padding: 72px 0; }
   .section-tight { padding: 52px 0; }
+  .section-about { padding-bottom: 40px; }
+  .section-contact { padding-top: 40px; }
 }
 
 .eyebrow {
@@ -470,7 +474,7 @@ main { overflow-x: clip; }
 .service-card {
   --c-bg: var(--art-paper); --c-fg: var(--ink);
   position: relative; display: flex; flex-direction: column;
-  padding: 1.8rem 1.6rem 1.6rem;
+  padding: 2rem 1.6rem 1.6rem;
   background: var(--c-bg); color: var(--c-fg);
   border: var(--bw) solid var(--ink); border-radius: var(--radius); box-shadow: var(--shadow);
 }
@@ -485,14 +489,16 @@ main { overflow-x: clip; }
 }
 .service-icon svg { width: 34px; height: 34px; }
 .service-price {
-  position: absolute; top: -18px; right: 16px;
+  position: absolute; top: 14px; right: 14px;
   display: grid; place-items: center; text-align: center;
-  width: 104px; height: 104px; border-radius: 50%;
+  box-sizing: border-box; width: 96px; height: 96px; padding: .55rem;
+  overflow: hidden; border-radius: 50%;
   background: var(--art-paper); color: var(--ink);
   border: var(--bw) solid var(--ink); transform: rotate(8deg);
-  font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; line-height: 1.15;
+  font-size: .58rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; line-height: 1.1;
+  white-space: normal; word-break: normal; overflow-wrap: normal;
 }
-.service-price strong { display: block; font-family: var(--font-display); font-weight: 800; font-stretch: 85%; font-size: 1.45rem; letter-spacing: -.01em; }
+.service-price strong { display: block; font-family: var(--font-display); font-weight: 800; font-stretch: 85%; font-size: 1.3rem; letter-spacing: -.01em; line-height: 1; }
 .service-list { list-style: none; padding: 0; margin: .4rem 0 1.4rem; font-size: .93rem; }
 .service-list li { display: flex; gap: .55rem; padding: .42rem 0; border-top: 2px dashed currentColor; border-color: color-mix(in srgb, currentColor 35%, transparent); }
 .service-list svg { width: 18px; height: 18px; flex: none; margin-top: .2rem; }
