@@ -123,6 +123,9 @@ main { overflow-x: clip; }
 .section-lead { font-size: 1.12rem; color: var(--muted); max-width: 36rem; }
 .section-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1.5rem; margin-bottom: 3rem; }
 .section-head > div { max-width: 44rem; }
+.section-head > *, .hero-grid > *, .page-hero-grid > *, .form-layout > *,
+.cta-inner > *, .faq-grid > *, .work-bento > *, .service-grid > *,
+.process-steps > *, .project-grid > *, .cal-months > * { min-width: 0; }
 
 /* hand-drawn underline + marker highlight */
 .scribble {
@@ -390,6 +393,7 @@ main { overflow-x: clip; }
 .work-card:focus-visible { outline: none; }
 .work-card:focus-visible .art-frame { outline: 3px solid var(--cobalt); outline-offset: 5px; }
 .work-meta { display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start; padding-top: 1.1rem; }
+.work-meta > div { min-width: 0; }
 .work-meta h3 { font-size: 1.55rem; margin: 0 0 .15rem; }
 .work-meta p { font-size: .92rem; color: var(--muted); margin: 0; }
 .work-view {
@@ -408,14 +412,10 @@ main { overflow-x: clip; }
 }
 @media (min-width: 1200px) {
   .work-bento { grid-template-columns: repeat(4, 1fr); }
-  .work-bento .is-feature { grid-column: span 2; grid-row: span 2; }
-  .work-bento .is-feature .art-frame { flex: 1; aspect-ratio: auto; min-height: 0; }
   .work-bento .is-wide { grid-column: span 2; }
 }
 .work-bento .is-wide .art-frame { aspect-ratio: 8 / 5; }
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .work-bento .is-feature { grid-column: span 2; }
-  .work-bento .is-feature .art-frame { aspect-ratio: 8 / 5; }
   .work-bento .is-wide { grid-column: span 2; }
 }
 
@@ -508,7 +508,7 @@ main { overflow-x: clip; }
 @media (min-width: 992px) { .process-steps { grid-template-columns: repeat(3, 1fr); gap: 3.2rem; } }
 .process-step { position: relative; }
 .process-panel {
-  position: relative; aspect-ratio: 4 / 2;
+  position: relative; aspect-ratio: 4 / 3.2;
   border: var(--bw) solid var(--ink); border-radius: var(--radius);
   background: var(--art-paper); color: var(--ink); box-shadow: 8px 8px 0 var(--ink);
   overflow: hidden; margin-bottom: 1.5rem;
@@ -543,14 +543,14 @@ main { overflow-x: clip; }
 .memo strong { display: block; color: var(--cobalt); font-family: var(--font-display); font-size: 1.08rem; font-weight: 800; line-height: 1.05; margin-bottom: .35rem; text-transform: uppercase; }
 .memo dl { display: grid; grid-template-columns: auto 1fr; gap: .08rem .55rem; margin: 0; }
 .memo dt { color: var(--tomato-deep); font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
-.memo dd { margin: 0; color: var(--ink); font-weight: 700; }
+.memo dd { min-width: 0; margin: 0; color: var(--ink); font-weight: 700; overflow-wrap: anywhere; }
 .memo .tape { width: 70px; height: 22px; top: -12px; left: 38%; }
 
 /* ------------------------------------------------------------------
    12. About / studio wall
 ------------------------------------------------------------------ */
 .about-grid { display: grid; gap: 3.5rem; align-items: center; }
-@media (min-width: 992px) { .about-grid { grid-template-columns: 1fr 1.1fr; gap: 5rem; } }
+@media (min-width: 992px) { .about-grid { grid-template-columns: 1fr; gap: 5rem; } }
 .about-portrait { display: flex; gap: 1.4rem; align-items: center; margin: 1.8rem 0; }
 .about-portrait svg { width: 108px; height: 108px; flex: none; border: var(--bw) solid var(--ink); border-radius: 50%; background: var(--sun); box-shadow: var(--shadow-sm); }
 .about-portrait strong { display: block; font-family: var(--font-display); font-size: 1.35rem; }
@@ -706,6 +706,12 @@ main { overflow-x: clip; }
 .project-grid > li.is-entering { opacity: 0; transform: translateY(14px) scale(.98); }
 .work-card .chip { margin-bottom: .45rem; }
 .project-grid .work-meta { padding-top: 1.2rem; }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .work-bento, .service-grid { gap: 1.6rem 1.4rem; }
+  .project-grid { gap: 2.2rem 1.4rem; }
+  .process-steps { gap: 2rem; }
+}
 
 /* ------------------------------------------------------------------
    18. Case-study dialog
