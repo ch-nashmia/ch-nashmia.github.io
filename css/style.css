@@ -552,6 +552,38 @@ main { overflow-x: clip; }
 .memo dt { color: var(--tomato-deep); font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
 .memo dd { min-width: 0; margin: 0; color: var(--ink); font-weight: 700; overflow-wrap: anywhere; }
 .memo .tape { width: 70px; height: 22px; top: -12px; left: 38%; }
+.current-learning {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: center;
+  margin-top: 3.2rem; padding: 1.35rem 1.5rem; background: var(--art-paper); color: var(--ink);
+  border: var(--bw) solid var(--ink); border-radius: var(--radius); box-shadow: var(--shadow);
+  transform: rotate(-.7deg);
+}
+.current-learning-mark {
+  display: grid; place-items: center; width: 4.2rem; height: 4.2rem;
+  background: var(--tomato); border: var(--bw) solid var(--ink); border-radius: 50%;
+  color: var(--ink); box-shadow: 4px 4px 0 var(--ink);
+}
+.current-learning-mark svg { width: 2.2rem; height: 2.2rem; }
+.current-learning-copy .eyebrow { margin-bottom: .3rem; color: var(--tomato-deep); }
+.current-learning-copy .num { color: var(--cobalt); }
+.current-learning h3 { margin: 0 0 .35rem; color: var(--cobalt); font-size: clamp(1.45rem, 3vw, 2rem); }
+.current-learning-copy > p:not(.eyebrow) { max-width: 42rem; margin: 0; color: var(--muted); }
+.current-learning-topics {
+  display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; margin: .9rem 0 0; padding: 0;
+}
+.current-learning-topics li {
+  padding: .35rem .65rem; border: 2px solid var(--ink); border-radius: 999px;
+  font-size: .82rem; font-weight: 700; background: var(--paper-2);
+}
+.current-learning-status { align-self: start; white-space: nowrap; }
+@media (max-width: 767.98px) {
+  .current-learning { grid-template-columns: auto 1fr; }
+  .current-learning-status { grid-column: 2; justify-self: start; }
+}
+@media (max-width: 479.98px) {
+  .current-learning { grid-template-columns: 1fr; }
+  .current-learning-status { grid-column: auto; }
+}
 
 /* ------------------------------------------------------------------
    12. About / studio wall
