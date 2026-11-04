@@ -553,7 +553,7 @@ main { overflow-x: clip; }
 .memo dd { min-width: 0; margin: 0; color: var(--ink); font-weight: 700; overflow-wrap: anywhere; }
 .memo .tape { width: 70px; height: 22px; top: -12px; left: 38%; }
 .current-learning {
-  display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: center;
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 1.2rem; align-items: start;
   margin-top: 3.2rem; padding: 1.35rem 1.5rem; background: var(--art-paper); color: var(--ink);
   border: var(--bw) solid var(--ink); border-radius: var(--radius); box-shadow: var(--shadow);
   transform: rotate(-.7deg);
@@ -575,7 +575,7 @@ main { overflow-x: clip; }
   padding: .35rem .65rem; border: 2px solid var(--ink); border-radius: 999px;
   font-size: .82rem; font-weight: 700; background: var(--paper-2);
 }
-.current-learning-status { align-self: start; white-space: nowrap; }
+.current-learning-status { align-self: start; white-space: nowrap; margin-top: .15rem; }
 @media (max-width: 767.98px) {
   .current-learning { grid-template-columns: auto 1fr; }
   .current-learning-status { grid-column: 2; justify-self: start; }
